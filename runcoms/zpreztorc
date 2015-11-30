@@ -27,10 +27,13 @@ zstyle ':prezto:load' pmodule \
   'environment' \
   'terminal' \
   'editor' \
+  'git' \
+  'tmux' \
   'history' \
   'directory' \
   'spectrum' \
   'utility' \
+  'ruby' \
   'completion' \
   'prompt'
 
