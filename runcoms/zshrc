@@ -11,3 +11,25 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# AWS CLI
+export JAVA_HOME=$(/usr/libexec/java_home)
+export AWS_ELB_HOME=/Users/rhinon/dev/ElasticLoadBalancing-1.0.34.0
+export AWS_CREDENTIAL_FILE=/Users/rhinon/dev/credentials/ryan/aws-credentials
+# http://docs.aws.amazon.com/general/latest/gr/rande.html#elb_region
+export AWS_ELB_URL=https://elasticloadbalancing.us-west-2.amazonaws.com
+export PATH=$PATH:$AWS_ELB_HOME/bin
+
+export ANDROID_HOME="$HOME/dev/android-sdk"
+
+# Aliases
+alias gorspec="bundle exec rspec -f d -c"
+alias st="open -a SourceTree"
+
+# ssh
+alias ellie="ssh -i ~/.ssh/id_rsa_p -o 'IdentitiesOnly yes' rhinon@home.rhinon.net -p 8822"
+
+# No shared history
+unsetopt SHARE_HISTORY
+
+export PATH="$PATH:$HOME/.rvm/bin:$HOME/dev/android-sdk/tools:$HOME/dev/android-sdk/platform-tools" # Add RVM to PATH for scripting
