@@ -29,6 +29,9 @@ alias st="open -a SourceTree"
 # ssh
 alias ellie="ssh -i ~/.ssh/id_rsa_p -o 'IdentitiesOnly yes' rhinon@home.rhinon.net -p 8822"
 
+# cr
+alias crnew="cr -r linda,james,pam,bardhi"
+
 # No shared history
 unsetopt SHARE_HISTORY
 
