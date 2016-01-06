@@ -35,4 +35,4 @@ alias crnew="cr -r linda,james,pam,bardhi"
 # No shared history
 unsetopt SHARE_HISTORY
 
-export PATH="$PATH:$HOME/.rvm/bin:$HOME/dev/android-sdk/tools:$HOME/dev/android-sdk/platform-tools" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin:/usr/local/heroku/bin:$HOME/dev/android-sdk/tools:$HOME/dev/android-sdk/platform-tools" # Add RVM to PATH for scripting
