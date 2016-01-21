@@ -32,6 +32,9 @@ alias ellie="ssh -i ~/.ssh/id_rsa_p -o 'IdentitiesOnly yes' rhinon@home.rhinon.n
 # cr
 alias crnew="cr -r linda,james,pam,bardhi"
 
+# Sublime text
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
 # No shared history
 unsetopt SHARE_HISTORY
 
