@@ -22,20 +22,23 @@ export PATH=$PATH:$AWS_ELB_HOME/bin
 
 export ANDROID_HOME="$HOME/dev/android-sdk"
 
+export MEDISAS_REPOS_PATH="$HOME/dev/medisas"
+
 # Aliases
 alias gorspec="bundle exec rspec -f d -c"
 alias st="open -a SourceTree"
 
 # ssh
 alias ellie="ssh -i ~/.ssh/id_rsa_p -o 'IdentitiesOnly yes' rhinon@home.rhinon.net -p 8822"
-
-# cr
-alias crnew="cr -r linda,james,pam,bardhi"
+alias ellieproxy="ssh -D 5000 -i ~/.ssh/id_rsa_p -N -o 'IdentitiesOnly yes' rhinon@home.rhinon.net -p 8822"
 
 # Sublime text
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
+# Visual Studio Code
+function vscode () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*; }
+
 # No shared history
 unsetopt SHARE_HISTORY
 
-export PATH="$PATH:$HOME/.rvm/bin:/usr/local/heroku/bin:$HOME/dev/android-sdk/tools:$HOME/dev/android-sdk/platform-tools" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin:/usr/local/heroku/bin:$HOME/dev/android-sdk/tools:$HOME/dev/android-sdk/platform-tools:$HOME/dev/medisas/tools/code_review" # Add RVM to PATH for scripting
